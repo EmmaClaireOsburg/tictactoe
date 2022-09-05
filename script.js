@@ -37,6 +37,7 @@ function restart(){
     
 }
 
+
 function draw(){
     for(let i = 0; i < fields.length; i++) {
        if(fields[i] == 'circle'){
@@ -70,12 +71,12 @@ function checkForWin(){
 
     if(fields[0] == fields[3] && fields[3] == fields[6] && fields[0]) {
         winner = fields[0];
-        document.getElementById('line4').style.transform = 'scaleX(1) rotate(90deg)';
+        document.getElementById('line3').style.transform = 'scaleX(1) rotate(90deg)';
     }
 
     if(fields[1] == fields[4] && fields[4] == fields[7] && fields[1]) {
         winner = fields[1];
-        document.getElementById('line3').style.transform = 'scaleX(1) rotate(90deg)';
+        document.getElementById('line4').style.transform = 'scaleX(1) rotate(90deg)';
     }
 
     if(fields[2] == fields[5] && fields[5] == fields[8] && fields[2]) {

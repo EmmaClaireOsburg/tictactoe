@@ -6,6 +6,12 @@ body{
     margin-top: 150px;
 }
 
+.box{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+}
+
 .playerPanel{
     display: flex;
     font-size: 32px;
@@ -83,21 +89,20 @@ table tr:last-child td{
     background-color: rgba(0,0,0,0.5);
     width: 350px;
     position: absolute;
+    margin-left: 25px;
     transform: scaleX(0.0);
     transition: transform 225ms ease-in-out;
     z-index: 1;
 }
 
 .makeVertical{
-    transform: rotate(90deg) scaleX(0.0);
+    transform: rotate(90deg) scaleX(0.0)
 }
 
 .gameOver{
+    height: 88vh;
     position: absolute;
-    left: 83px;
-    right: 0;
-    width: 80%;
-    opacity: 0.9;
+    width: 80vw;
     bottom: 63px;
     z-index: 2;
     animation: zoomIn 225ms ease-in-out;
